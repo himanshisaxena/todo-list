@@ -1,23 +1,29 @@
-# Todo List
 
-> Todo list is great for scheduling and deadlines and is an excellent collaboration tool. 
+# To do list application
+
+> An application capable of tracking activities, deleting them and modifying them.
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Status](#status)
-- [Contact](#contact)
+- [To do list application](#to-do-list-application)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
+  - [Contact](#contact)
 
 ## General info
 
-> The objective of the project is to practice separation of concern in JavaScript.
+> The objective of the project is to practice separation of concern in
+> JavaScript by implementing a To-do list app.
 
 ## Screenshots
 
 ![Example screenshot](./planning/Screenshot.jpg)
+
 
 ## Technologies
 
@@ -33,7 +39,6 @@ clone the repo and start using the todo list.
 ## Code Examples
 
 ```
-
 task_input.addEventListener('keyup', (e) => {
     if (e.keyCode === 13 && task_input.value.length > 0) {
         addToDo(task_input);
@@ -42,6 +47,7 @@ task_input.addEventListener('keyup', (e) => {
         showAllTodos();
     }
 });
+
 
 ```
 
