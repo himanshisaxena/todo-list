@@ -1,6 +1,6 @@
-# Image gallery
+# Todo List
 
-> A simple
+> Todo list is great for scheduling and deadlines and is an excellent collaboration tool. 
 
 ## Table of contents
 
@@ -13,8 +13,7 @@
 
 ## General info
 
-> The objective of the project is to practice separation of concern in
-> JavaScript.
+> The objective of the project is to practice separation of concern in JavaScript.
 
 ## Screenshots
 
