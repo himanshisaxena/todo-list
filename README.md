@@ -1,3 +1,4 @@
+
 # To do list application
 
 > An application capable of tracking activities, deleting them and modifying them.
@@ -45,7 +46,8 @@ task_input.addEventListener('keyup', (e) => {
         task_input.value = '';
         showAllTodos();
     }
-}); 
+});
+
 
 ```
 
