@@ -8,9 +8,7 @@
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Setup](#setup)
-- [Features](#features)
 - [Status](#status)
-- [Inspiration](#inspiration)
 - [Contact](#contact)
 
 ## General info
@@ -20,7 +18,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./planning/Screenshot.jpg)
 
 ## Technologies
 
@@ -31,27 +29,27 @@
 
 ## Setup
 
-clone the repo and start using the stop watch.
+clone the repo and start using the todo list.
 
 ## Code Examples
 
-```js
-
 ```
 
-## Features
+task_input.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13 && task_input.value.length > 0) {
+        addToDo(task_input);
+        saveToLocalStorage();
+        task_input.value = '';
+        showAllTodos();
+    }
+});
 
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
+```
 
 ## Status
 
 Project is: _in progress_
+
+## Contact
+
+[Himanshi Saxena](https://github.com/himanshisaxena)
