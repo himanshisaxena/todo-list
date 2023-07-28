@@ -2,64 +2,64 @@
 
 Todo list where you can add your tasks.
 
-## Tasks
+# Tasks
 
-### Input to create the task
+## Input to create the task
 
 - As a user I want be able to add my task
 
-### HTML
+  ### HTML
 
-- add input and btn
+  - add input and btn
 
-### CSS
+  ### CSS
 
-- add color and postion of button
+  - add color and postion of button
 
-### JS
+  ### JS
 
-- add function to the btn
+  - add function to the btn
 
-### Tasks
+## Tasks
 
 - As a user I want to see created tasks
 
-### HTML
+  ### HTML
 
-- add text
+  - add text
 
-### CSS
+  ### CSS
 
-- text size
+  - text size
 
-### Btns change and delete
+## Btns change and delete
 
 - As a user I want be able to change and delete my tasks
 
-### HTML
+  ### HTML
 
-- add btns
+  - add btns
 
-### CSS
+  ### CSS
 
-- style of edit and delet button
+  - style of edit and delet button
 
-### JS
+  ### JS
 
-- add function to the btns
+  - add function to the btns
 
-### Btn to remove all the tasks
+## Btn to remove all the tasks
 
-- As a user I want be able to remove all my tasks
+  - As a user I want be able to remove all my tasks
 
-### HTML
+  ### HTML
 
-- add btn
+  - add btn
 
-### CSS
+  ### CSS
 
-- style of clear all data 
+  - style of clear all data 
 
-### JS
+  ### JS
 
-- add function to the btn
+  - add function to the btn

@@ -1,26 +1,28 @@
-# Image gallery
+# To do list application
 
-> A simple
+> An application capable of tracking activities, deleting them and modifying them.
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [To do list application](#to-do-list-application)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Status](#status)
+  - [Contact](#contact)
 
 ## General info
 
 > The objective of the project is to practice separation of concern in
-> JavaScript.
+> JavaScript by implementing a To-do list app.
 
 ## Screenshots
 
-![Example screenshot]()
+![Example screenshot](./planning/Screenshot.jpg)
+
 
 ## Technologies
 
@@ -31,27 +33,26 @@
 
 ## Setup
 
-clone the repo and start using the stop watch.
+clone the repo and start using the todo list.
 
 ## Code Examples
 
-```js
+```
+task_input.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13 && task_input.value.length > 0) {
+        addToDo(task_input);
+        saveToLocalStorage();
+        task_input.value = '';
+        showAllTodos();
+    }
+}); 
 
 ```
-
-## Features
-
-List of features ready and Todos for future development
-
--
--
--
-
-To-do list:
-
--
--
 
 ## Status
 
 Project is: _in progress_
+
+## Contact
+
+[Himanshi Saxena](https://github.com/himanshisaxena)
