@@ -1,12 +1,22 @@
-import { data, dom } from './data.js';
-import createItem from './components/createItem.js';
+import { data } from "./data.js";
+import { dom } from "./dom.js";
+import createItems from "./components/createItem.js";
 
-// default show some items
-data.items.forEach((itemData) => {
-    const item = createItem(itemData);
-    dom.itemsList.append(item);
-});
+// add default data
 
-import './listeners/addItemListener.js';
-import './listeners/submitItemListener.js';
-import './listeners/deleteItemsListener.js';
+data.tasks.forEach((task) => {
+    const newTask = createItems(task);
+    dom.itemList.append(newTask);
+
+})
+
+import './events/clearBtnListener.js'
+import './events/inputListener.js'
+import './events/submitBtnListener.js'
+
+
+
+
+
+
+

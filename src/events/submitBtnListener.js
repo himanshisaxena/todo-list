@@ -1,5 +1,5 @@
-import addItemList from '../handlers/addItemHandler.js';
-import { data, dom } from '../data.js';
+import { dom } from "../dom.js";
+import addItemList from "../handlers/addItemListHandler.js";
 
 dom.submitBtn.addEventListener('click', (e) => {
     e.preventDefault();

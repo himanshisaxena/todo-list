@@ -1,19 +1,15 @@
+// add initial tasks
 export const data = {
-    items: [
+    tasks: [
         {
             id: 1,
-            text: 'Exercise',
+            text: 'Learn javascript'
         },
         {
             id: 2,
-            text: 'coding',
-        },
-        
-        ],
-};
-
-export default data;
-
-
-
+            text: 'Do exercise'
+        }
+    ],
+    id: 3,
+}
 

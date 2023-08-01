@@ -1,48 +1,50 @@
-// Imports
-import { data, dom } from '../data.js';
-import editItemList from '../handlers/editItemHandler.js';
-import deleteItemList from '../handlers/deleteItemHandler.js';
+import { data } from "../data.js";
+import { dom } from "../dom.js";
+import editItemList from "../handlers/editItemListHandler.js";
+import deleteItemList from "../handlers/deleteItemListHandler.js";
 
-function createItem(itemData) {
-    // create div
-    const container = document.createElement('div');
-    container.classList.add('grocery-item');
-    container.id = itemData.id;
-
-    // create title
-    const title = document.createElement('p');
-    title.innerText = itemData.text;
-    title.classList.add('title');
-
-    // create buttons container
-    const btnContainer = document.createElement('div');
-    btnContainer.classList.add('btn-container');
-
+const createItems = (itemData) => {
+    // create container for item
+    const itemContainer = document.createElement("div");
+    itemContainer.classList.add("grocery-item");
+    itemContainer.id = itemData.id;
+  
+    // create title for item
+    const title = document.createElement("p");
+    title.classList.add("title");
+    title.innerHTML = itemData.text;
+  
+    // create button container
+    const btnContainer = document.createElement("div");
+    btnContainer.classList.add("btn-container");
+  
     // create edit button
-    const btnEdit = document.createElement('button');
-    btnEdit.classList.add('edit-btn');
-    btnEdit.innerHTML = '<i class="fas fa-edit"></i>';
-
-    // add event
-    btnEdit.addEventListener('click', () => {
-        dom.add_btn.innerText = 'Edit';
-        container.classList.add('selected');
-        editItemList(itemData.id);
+    const editBtn = document.createElement("button");
+    editBtn.classList.add("edit-btn");
+    editBtn.innerHTML = '<i class="fas fa-edit"></i>';
+  
+    // add event to edit btn
+    editBtn.addEventListener("click", () => {
+      dom.submitBtn.innerHTML = "Edit";
+      itemContainer.classList.add("selected");
+      editItemList(itemData.id);
     });
+  
     // create delete button
-    const btnDelete = document.createElement('button');
-    btnDelete.classList.add('delete-btn');
-    btnDelete.innerHTML = '<i class="fas fa-trash"></i>';
-    // add event
-    btnDelete.addEventListener('click', () => {
-        deleteItemList(itemData.id);
+    const deleteBtn = document.createElement("button");
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.innerHTML = '<i class="fas fa-trash"></i>';
+  
+    // add event to delete btn
+    deleteBtn.addEventListener("click", () => {
+      deleteItemList(itemData.id);
     });
-
+  
     // append
-    btnContainer.append(btnEdit, btnDelete);
-    container.append(title, btnContainer);
+    btnContainer.append(editBtn, deleteBtn);
+    itemContainer.append(title, btnContainer);
+  
+    return itemContainer;
+  };
 
-    return container;
-}
-
-export default createItem;
+export default createItems;
